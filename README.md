@@ -8,7 +8,8 @@ One line, one laugh: a single funny sentence for the make.fun bounty
 [u-deysumbrella-one-line-one-laugh-e0cdcda9](https://make.fun/bounty/u-deysumbrella-one-line-one-laugh-e0cdcda9).
 
 `main.py` (pure Python stdlib, deterministic) writes the line to
-`/output/entry.txt` — one line, 1–140 characters, UTF-8.
+`/output/entry.txt` — one line, 1–140 characters, UTF-8, with no
+leading or trailing whitespace and no embedded newline.
 
 Run:
 

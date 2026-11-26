@@ -13,6 +13,7 @@ LINE = "My Wi-Fi died for five minutes today, so I talked to my family \u2014 tu
 def main():
     assert "\n" not in LINE, "entry must be a single line"
     assert LINE.strip(), "entry must not be blank"
+    assert LINE == LINE.strip(), "entry must have no leading/trailing whitespace"
     assert 1 <= len(LINE) <= 140, "entry length %d out of range" % len(LINE)
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
